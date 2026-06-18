@@ -1,18 +1,16 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
+import type { Language } from '../lib/translations';
 
-const links = [
-  { label: 'Serviços', href: '#servicos' },
-  { label: 'Diferenciais', href: '#diferenciais' },
-  { label: 'Resultados', href: '#resultados' },
-  { label: 'Contato', href: '#contato' },
-];
+const WA = 'https://wa.me/5511961699686?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento.';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { lang, setLang, t } = useLanguage();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -28,9 +26,13 @@ export default function Navbar() {
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-lg btn-primary flex items-center justify-center">
-            <Zap size={16} className="text-white" fill="white" />
+        <a href="#" className="flex items-center gap-2.5 group">
+          <div className="bg-white rounded-lg p-0.5 flex-shrink-0 overflow-hidden" style={{ width: 38, height: 38 }}>
+            <img
+              src="/logo.png"
+              alt="Getsemani IT Solutions"
+              className="w-full h-full object-contain"
+            />
           </div>
           <span className="font-bold text-lg tracking-tight">
             <span className="gradient-text">Getsemani</span>
@@ -40,7 +42,7 @@ export default function Navbar() {
 
         {/* Desktop links */}
         <ul className="hidden md:flex items-center gap-8">
-          {links.map((l) => (
+          {t.navbar.links.map((l) => (
             <li key={l.href}>
               <a
                 href={l.href}
@@ -53,15 +55,32 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* CTA */}
+        {/* Right actions */}
         <div className="hidden md:flex items-center gap-3">
+          {/* Language toggle */}
+          <div className="flex items-center gap-0.5 glass-card rounded-lg p-1 border border-white/5">
+            {(['pt-BR', 'en'] as Language[]).map((l) => (
+              <button
+                key={l}
+                onClick={() => setLang(l)}
+                className={`px-2.5 py-1 rounded text-xs font-semibold transition-colors ${
+                  lang === l
+                    ? 'bg-sky-500 text-white'
+                    : 'text-slate-500 hover:text-slate-300'
+                }`}
+              >
+                {l === 'pt-BR' ? 'PT' : 'EN'}
+              </button>
+            ))}
+          </div>
+
           <a
-            href="https://wa.me/5511961699686?text=Olá! Gostaria de um orçamento."
+            href={WA}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary text-white text-sm font-semibold px-5 py-2.5 rounded-lg cursor-pointer"
+            className="btn-primary text-white text-sm font-semibold px-5 py-2.5 rounded-lg"
           >
-            <span>Solicitar Orçamento</span>
+            {t.navbar.cta}
           </a>
         </div>
 
@@ -78,7 +97,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden glass-card border-t border-white/5 px-4 py-4 flex flex-col gap-4">
-          {links.map((l) => (
+          {t.navbar.links.map((l) => (
             <a
               key={l.href}
               href={l.href}
@@ -88,13 +107,29 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
+          {/* Mobile lang toggle */}
+          <div className="flex gap-2">
+            {(['pt-BR', 'en'] as Language[]).map((l) => (
+              <button
+                key={l}
+                onClick={() => setLang(l)}
+                className={`px-3 py-1.5 rounded-lg text-xs font-semibold border transition-colors ${
+                  lang === l
+                    ? 'bg-sky-500 text-white border-sky-500'
+                    : 'text-slate-400 border-white/10 hover:border-sky-500/30'
+                }`}
+              >
+                {l === 'pt-BR' ? 'Português' : 'English'}
+              </button>
+            ))}
+          </div>
           <a
-            href="https://wa.me/5511961699686?text=Olá! Gostaria de um orçamento."
+            href={WA}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary text-white text-sm font-semibold px-5 py-3 rounded-lg text-center"
           >
-            <span>Solicitar Orçamento</span>
+            {t.navbar.cta}
           </a>
         </div>
       )}

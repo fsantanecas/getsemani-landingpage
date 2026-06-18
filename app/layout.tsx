@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Providers from "./components/Providers";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -72,7 +73,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 "Soluções em IA, automação, desenvolvimento web e sistemas personalizados para empresas modernas.",
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+55-11-99999-9999",
+                telephone: "+55-11-96169-9686",
                 contactType: "customer service",
                 areaServed: "BR",
                 availableLanguage: "Portuguese",
@@ -82,7 +83,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col"><Providers>{children}</Providers></body>
     </html>
   );
 }
