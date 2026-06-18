@@ -69,15 +69,15 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center justify-between">
             <div className="flex items-center gap-2 text-slate-400 text-sm">
               <Mail size={15} className="text-sky-400" />
-              contato@getsemani.com.br
+              getsemanitsolutions@gmail.com
             </div>
             <div className="flex items-center gap-2 text-slate-400 text-sm">
               <Phone size={15} className="text-sky-400" />
-              +55 (11) 99999-9999
+              (11) 96169-9686
             </div>
             <div className="flex items-center gap-2 text-slate-400 text-sm">
               <MapPin size={15} className="text-sky-400" />
-              São Paulo, SP — Brasil
+              Vila Prudente, São Paulo / SP
             </div>
           </div>
         </div>

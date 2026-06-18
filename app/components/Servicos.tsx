@@ -41,9 +41,9 @@ const services = [
   },
   {
     icon: <Code2 size={26} />,
-    title: 'Sistemas Personalizados',
-    desc: 'Softwares e ERPs desenvolvidos sob medida para as necessidades específicas da sua operação.',
-    benefit: 'Tecnologia que cresce com você',
+    title: 'CRM com Dashboard Personalizado',
+    desc: 'Criamos CRMs sob medida com dashboards intuitivos para gerenciar leads, pipeline de vendas e relacionamento com clientes.',
+    benefit: 'Gestão comercial centralizada e eficiente',
     color: 'from-amber-500/20 to-amber-500/5',
     iconColor: 'text-amber-400',
     borderColor: 'rgba(245,158,11,0.15)',
@@ -129,7 +129,7 @@ export default function Servicos() {
             Não encontrou o que precisa? Desenvolvemos soluções totalmente personalizadas.
           </p>
           <a
-            href="https://wa.me/5511999999999?text=Olá!%20Tenho%20uma%20necessidade%20específica%20de%20tecnologia."
+            href="https://wa.me/5511961699686?text=Olá!%20Tenho%20uma%20necessidade%20específica%20de%20tecnologia."
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary text-slate-200 font-semibold px-7 py-3.5 rounded-xl inline-flex items-center gap-2 hover:text-white"

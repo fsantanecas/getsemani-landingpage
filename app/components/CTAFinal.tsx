@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { MessageCircle, Calendar, ArrowRight, CheckCircle2, Clock } from 'lucide-react';
 
-const WHATSAPP = 'https://wa.me/5511999999999?text=Olá!%20Quero%20falar%20com%20um%20especialista%20da%20Getsemani%20IT%20Solutions.';
+const WHATSAPP = 'https://wa.me/5511961699686?text=Olá!%20Quero%20falar%20com%20um%20especialista%20da%20Getsemani%20IT%20Solutions.';
 
 const benefits = [
   'Diagnóstico gratuito de 30 minutos',
@@ -23,7 +23,7 @@ export default function CTAFinal() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const msg = `Olá! Meu nome é ${form.nome}, sou da empresa ${form.empresa}. Meu email: ${form.email}. WhatsApp: ${form.whatsapp}. Desafio: ${form.desafio}`;
-    window.open(`https://wa.me/5511999999999?text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://wa.me/5511961699686?text=${encodeURIComponent(msg)}`, '_blank');
     setSent(true);
   };
 
@@ -80,7 +80,7 @@ export default function CTAFinal() {
             </a>
 
             <a
-              href="https://calendly.com/getsemani"
+              href="https://wa.me/5511961699686?text=Olá!%20Gostaria%20de%20agendar%20uma%20reunião%20online."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full flex items-center justify-center gap-3 btn-secondary rounded-2xl py-4 px-6 font-semibold text-slate-200 text-base hover:text-white"

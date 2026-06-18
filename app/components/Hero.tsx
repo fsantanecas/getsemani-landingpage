@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react';
 import { ArrowRight, MessageCircle, ChevronDown, Cpu, Globe, Bot } from 'lucide-react';
 
-const WHATSAPP = 'https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20um%20orçamento%20da%20Getsemani%20IT%20Solutions.';
+const WHATSAPP = 'https://wa.me/5511961699686?text=Olá!%20Gostaria%20de%20um%20orçamento%20da%20Getsemani%20IT%20Solutions.';
 
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);

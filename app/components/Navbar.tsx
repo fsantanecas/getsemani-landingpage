@@ -56,7 +56,7 @@ export default function Navbar() {
         {/* CTA */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="https://wa.me/5511999999999?text=Olá! Gostaria de um orçamento."
+            href="https://wa.me/5511961699686?text=Olá! Gostaria de um orçamento."
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary text-white text-sm font-semibold px-5 py-2.5 rounded-lg cursor-pointer"
@@ -89,7 +89,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="https://wa.me/5511999999999?text=Olá! Gostaria de um orçamento."
+            href="https://wa.me/5511961699686?text=Olá! Gostaria de um orçamento."
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary text-white text-sm font-semibold px-5 py-3 rounded-lg text-center"
