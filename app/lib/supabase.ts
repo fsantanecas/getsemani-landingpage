@@ -16,29 +16,17 @@ export interface Lead {
 }
 
 export async function saveLead(lead: Lead) {
-  const { error } = await supabase.from('leads').insert([
-    { ...lead, origem: 'landing_page' },
-  ]);
+  const { error } = await supabase.from('leads').insert([{
+    nome: lead.nome,
+    empresa: lead.empresa || null,
+    email: lead.email,
+    whatsapp: lead.whatsapp,
+    origem: 'Site',
+    observacoes: lead.desafio || null,
+    status: 'Novo Lead',
+    temperatura: 'Frio',
+    interesse: [],
+    score: 0,
+  }]);
   return error;
 }
-
-/*
-  SQL to create the leads table in your Supabase project:
-
-  CREATE TABLE IF NOT EXISTS leads (
-    id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-    nome TEXT NOT NULL,
-    empresa TEXT,
-    email TEXT NOT NULL,
-    whatsapp TEXT,
-    desafio TEXT,
-    origem TEXT DEFAULT 'landing_page',
-    idioma TEXT DEFAULT 'pt-BR',
-    created_at TIMESTAMPTZ DEFAULT NOW()
-  );
-
-  ALTER TABLE leads ENABLE ROW LEVEL SECURITY;
-
-  CREATE POLICY "Allow landing page inserts" ON leads
-    FOR INSERT WITH CHECK (true);
-*/
