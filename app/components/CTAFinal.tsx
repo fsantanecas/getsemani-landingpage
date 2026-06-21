@@ -6,7 +6,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { saveLead } from '../lib/supabase';
 
 const WA_BASE = 'https://wa.me/5511961699686?text=';
-const WA_SCHEDULE = `${WA_BASE}${encodeURIComponent('Olá! Gostaria de agendar uma reunião online com a Getsemani IT Solutions.')}`;
+const CALENDLY = 'https://calendly.com/getsemanitsolutions/30min';
 
 export default function CTAFinal() {
   const { lang, t } = useLanguage();
@@ -82,7 +82,7 @@ export default function CTAFinal() {
             </a>
 
             <a
-              href={WA_SCHEDULE}
+              href={CALENDLY}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full flex items-center justify-center gap-3 btn-secondary rounded-2xl py-4 px-6 font-semibold text-slate-200 text-base hover:text-white"
