@@ -109,9 +109,9 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-600">
           <p>&copy; {year} Getsemani IT Solutions. {tf.copyright}</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-slate-400 transition-colors">{tf.privacy}</a>
-            <a href="#" className="hover:text-slate-400 transition-colors">{tf.terms}</a>
-            <a href="#" className="hover:text-slate-400 transition-colors">{tf.lgpd}</a>
+            <a href="/privacidade" className="hover:text-slate-400 transition-colors">{tf.privacy}</a>
+            <a href="/termos" className="hover:text-slate-400 transition-colors">{tf.terms}</a>
+            <a href="/lgpd" className="hover:text-slate-400 transition-colors">{tf.lgpd}</a>
           </div>
         </div>
       </div>
