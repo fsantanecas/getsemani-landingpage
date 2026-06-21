@@ -1,7 +1,8 @@
 'use client';
 
-import { Zap, Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import LogoMark from './LogoMark';
 
 const InstagramIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -39,12 +40,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2.5 mb-4">
-              <div className="bg-white rounded-lg p-0.5 flex-shrink-0" style={{ width: 34, height: 34 }}>
-                <img src="/logo.png" alt="Getsemani IT Solutions" className="w-full h-full object-contain" />
-              </div>
+              <LogoMark size={34} id="foot" />
               <span className="font-bold text-lg tracking-tight">
-                <span className="gradient-text">Getsemani</span>
-                <span className="text-slate-300 font-light"> IT Solutions</span>
+                <span className="gradient-text">GE</span>
+                <span className="text-white">tsemani</span>
+                <span className="text-slate-400 font-light"> IT Solutions</span>
               </span>
             </div>
             <p className="text-slate-500 text-sm leading-relaxed mb-6 max-w-xs">{tf.tagline}</p>
@@ -85,11 +85,11 @@ export default function Footer() {
         <div className="glass-card rounded-2xl p-6 mb-10">
           <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center justify-between">
             <a
-              href="mailto:getsemanitsolutions@gmail.com"
+              href="mailto:suporte@getsemanitsolutions.com.br"
               className="flex items-center gap-2 text-slate-400 text-sm hover:text-sky-400 transition-colors"
             >
               <Mail size={15} className="text-sky-400 shrink-0" />
-              getsemanitsolutions@gmail.com
+              suporte@getsemanitsolutions.com.br
             </a>
             <a
               href="tel:+5511961699686"

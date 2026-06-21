@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import type { Language } from '../lib/translations';
+import LogoMark from './LogoMark';
 
 const WA = 'https://wa.me/5511961699686?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento.';
 
@@ -27,16 +28,11 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2.5 group">
-          <div className="bg-white rounded-lg p-0.5 flex-shrink-0 overflow-hidden" style={{ width: 38, height: 38 }}>
-            <img
-              src="/logo.png"
-              alt="Getsemani IT Solutions"
-              className="w-full h-full object-contain"
-            />
-          </div>
+          <LogoMark size={36} id="nav" />
           <span className="font-bold text-lg tracking-tight">
-            <span className="gradient-text">Getsemani</span>
-            <span className="text-slate-300 font-light"> IT</span>
+            <span className="gradient-text">GE</span>
+            <span className="text-white">tsemani</span>
+            <span className="text-slate-400 font-light"> IT Solutions</span>
           </span>
         </a>
 

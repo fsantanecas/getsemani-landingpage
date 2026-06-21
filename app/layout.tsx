@@ -23,12 +23,18 @@ export const metadata: Metadata = {
     "sistemas personalizados",
     "Getsemani IT Solutions",
   ],
-  authors: [{ name: "Getsemani IT Solutions", url: "https://getsemani.com.br" }],
+  metadataBase: new URL('https://getsemanitsolutions.com.br'),
+  authors: [{ name: "Getsemani IT Solutions", url: "https://getsemanitsolutions.com.br" }],
   creator: "Getsemani IT Solutions",
+  icons: {
+    icon: [{ url: '/logo.png', type: 'image/png' }],
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://getsemani.com.br",
+    url: "https://getsemanitsolutions.com.br",
     siteName: "Getsemani IT Solutions",
     title: "Getsemani IT Solutions | IA, Automação e Desenvolvimento Digital",
     description:
@@ -53,7 +59,7 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
-  alternates: { canonical: "https://getsemani.com.br" },
+  alternates: { canonical: "https://getsemanitsolutions.com.br" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -67,13 +73,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Getsemani IT Solutions",
-              url: "https://getsemani.com.br",
-              logo: "https://getsemani.com.br/logo.png",
+              url: "https://getsemanitsolutions.com.br",
+              logo: "https://getsemanitsolutions.com.br/logo.png",
               description:
                 "Soluções em IA, automação, desenvolvimento web e sistemas personalizados para empresas modernas.",
               contactPoint: {
                 "@type": "ContactPoint",
                 telephone: "+55-11-96169-9686",
+                email: "suporte@getsemanitsolutions.com.br",
                 contactType: "customer service",
                 areaServed: "BR",
                 availableLanguage: "Portuguese",
