@@ -17,7 +17,7 @@ export const translations = {
       subtitle: 'Soluções em IA, automação e desenvolvimento digital que eliminam ineficiências, escalam seu negócio e colocam sua empresa décadas à frente da concorrência.',
       cta1: 'Solicitar Orçamento',
       cta2: 'Falar no WhatsApp',
-      trust: ['+120 Projetos Entregues', '98% Satisfação', 'Suporte 24/7'],
+      trust: ['+15 Projetos Entregues', '100% Dedicação', 'Suporte 24/7'],
       dashboard: {
         metrics: [
           { label: 'Processos Automatizados', value: '1.284', change: '+32%' },
@@ -25,7 +25,7 @@ export const translations = {
           { label: 'Economia Operacional', value: 'R$284k', change: '+89%' },
         ],
         chartLabel: 'Performance de Conversão',
-        chartLive: 'Ao vivo',
+        chartLive: 'Simulação',
         changeLabel: 'este mês',
         aiActive: 'IA Ativa',
         automation: 'Automação 24/7',
@@ -75,10 +75,10 @@ export const translations = {
     },
     diferenciais: {
       stats: [
-        { value: '+120', label: 'Projetos Entregues' },
-        { value: '98%', label: 'Satisfação dos Clientes' },
-        { value: '70%', label: 'Redução de Processos Manuais' },
-        { value: '+12', label: 'Anos de Experiência' },
+        { value: '+15', label: 'Projetos Entregues' },
+        { value: '100%', label: 'Dedicação ao Cliente' },
+        { value: '70%', label: 'Ganho com Automação' },
+        { value: '+5', label: 'Anos de Experiência em TI' },
       ],
       sectionLabel: 'Por que a Getsemani?',
       h2: { before: 'O que nos coloca ', highlight: 'décadas à frente', after: ' da concorrência' },
@@ -140,9 +140,19 @@ export const translations = {
     footer: {
       tagline: 'Transformamos tecnologia em crescimento inteligente. IA, automação e soluções digitais para empresas que querem liderar o futuro.',
       linkGroups: {
-        'Serviços': ['Desenvolvimento Web', 'Automação', 'Inteligência Artificial', 'Chatbots', 'Consultoria TI'],
-        'Empresa': ['Sobre nós', 'Cases de Sucesso', 'Blog', 'Carreiras', 'Contato'],
-      } as Record<string, string[]>,
+        'Serviços': [
+          { label: 'Desenvolvimento Web', href: '#servicos' },
+          { label: 'Automação', href: '#servicos' },
+          { label: 'Inteligência Artificial', href: '#servicos' },
+          { label: 'Chatbots', href: '#servicos' },
+          { label: 'Consultoria TI', href: '#servicos' },
+        ],
+        'Empresa': [
+          { label: 'Sobre nós', href: '#diferenciais' },
+          { label: 'Cases de Sucesso', href: '#resultados' },
+          { label: 'Contato', href: '#contato' },
+        ],
+      } as Record<string, { label: string; href: string }[]>,
       address: 'Vila Prudente, São Paulo - SP - Brazil',
       copyright: 'Todos os direitos reservados.',
       privacy: 'Política de Privacidade',
@@ -167,7 +177,7 @@ export const translations = {
       subtitle: 'AI, automation, and digital development solutions that eliminate inefficiencies, scale your business, and put your company decades ahead of the competition.',
       cta1: 'Request a Quote',
       cta2: 'Chat on WhatsApp',
-      trust: ['+120 Projects Delivered', '98% Satisfaction', '24/7 Support'],
+      trust: ['+15 Projects Delivered', '100% Dedication', '24/7 Support'],
       dashboard: {
         metrics: [
           { label: 'Automated Processes', value: '1,284', change: '+32%' },
@@ -175,7 +185,7 @@ export const translations = {
           { label: 'Operational Savings', value: '$284k', change: '+89%' },
         ],
         chartLabel: 'Conversion Performance',
-        chartLive: 'Live',
+        chartLive: 'Demo',
         changeLabel: 'this month',
         aiActive: 'AI Active',
         automation: 'Automation 24/7',
@@ -225,10 +235,10 @@ export const translations = {
     },
     diferenciais: {
       stats: [
-        { value: '+120', label: 'Projects Delivered' },
-        { value: '98%', label: 'Customer Satisfaction' },
-        { value: '70%', label: 'Reduction in Manual Processes' },
-        { value: '+12', label: 'Years of Experience' },
+        { value: '+15', label: 'Projects Delivered' },
+        { value: '100%', label: 'Dedication to Clients' },
+        { value: '70%', label: 'Gain with Automation' },
+        { value: '+5', label: 'Years of IT Experience' },
       ],
       sectionLabel: 'Why Getsemani?',
       h2: { before: 'What sets us ', highlight: 'decades ahead', after: ' of the competition' },
@@ -290,9 +300,19 @@ export const translations = {
     footer: {
       tagline: 'We turn technology into intelligent growth. AI, automation, and digital solutions for companies that want to lead the future.',
       linkGroups: {
-        'Services': ['Web Development', 'Automation', 'Artificial Intelligence', 'Chatbots', 'IT Consulting'],
-        'Company': ['About us', 'Success Stories', 'Blog', 'Careers', 'Contact'],
-      } as Record<string, string[]>,
+        'Services': [
+          { label: 'Web Development', href: '#servicos' },
+          { label: 'Automation', href: '#servicos' },
+          { label: 'Artificial Intelligence', href: '#servicos' },
+          { label: 'Chatbots', href: '#servicos' },
+          { label: 'IT Consulting', href: '#servicos' },
+        ],
+        'Company': [
+          { label: 'About us', href: '#diferenciais' },
+          { label: 'Success Stories', href: '#resultados' },
+          { label: 'Contact', href: '#contato' },
+        ],
+      } as Record<string, { label: string; href: string }[]>,
       address: 'Vila Prudente, São Paulo - SP - Brazil',
       copyright: 'All rights reserved.',
       privacy: 'Privacy Policy',

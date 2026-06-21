@@ -69,10 +69,10 @@ export default function Footer() {
             <div key={category}>
               <h4 className="text-white text-sm font-semibold mb-4">{category}</h4>
               <ul className="space-y-3">
-                {items.map((item) => (
-                  <li key={item}>
-                    <a href="#" className="text-slate-500 text-sm hover:text-sky-400 transition-colors">
-                      {item}
+                {(items as { label: string; href: string }[]).map((item) => (
+                  <li key={item.label}>
+                    <a href={item.href} className="text-slate-500 text-sm hover:text-sky-400 transition-colors">
+                      {item.label}
                     </a>
                   </li>
                 ))}
