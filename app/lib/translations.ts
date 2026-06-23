@@ -17,7 +17,7 @@ export const translations = {
       subtitle: 'Soluções em IA, automação e desenvolvimento digital que eliminam ineficiências, escalam seu negócio e colocam sua empresa décadas à frente da concorrência.',
       cta1: 'Solicitar Orçamento',
       cta2: 'Falar no WhatsApp',
-      trust: ['+15 Projetos Entregues', '100% Dedicação', 'Suporte 24/7'],
+      trust: ['Clientes Selecionados', 'Dedicação Total', 'Suporte 24/7'],
       dashboard: {
         metrics: [
           { label: 'Processos Automatizados', value: '1.284', change: '+32%' },
@@ -75,10 +75,10 @@ export const translations = {
     },
     diferenciais: {
       stats: [
-        { value: '+15', label: 'Projetos Entregues' },
-        { value: '100%', label: 'Dedicação ao Cliente' },
-        { value: '70%', label: 'Ganho com Automação' },
-        { value: '+5', label: 'Anos de Experiência em TI' },
+        { value: 'Seleto', label: 'Grupo de Primeiros Clientes' },
+        { value: '100%', label: 'Dedicação Total' },
+        { value: '70%', label: 'Redução com Automação' },
+        { value: '24/7', label: 'Suporte Disponível' },
       ],
       sectionLabel: 'Por que a Getsemani?',
       h2: { before: 'O que nos coloca ', highlight: 'décadas à frente', after: ' da concorrência' },
