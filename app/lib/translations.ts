@@ -7,6 +7,7 @@ export const translations = {
         { label: 'Serviços', href: '#servicos' },
         { label: 'Diferenciais', href: '#diferenciais' },
         { label: 'Resultados', href: '#resultados' },
+        { label: 'Blog', href: '/blog/automacao-de-processos' },
         { label: 'Contato', href: '#contato' },
       ],
       cta: 'Solicitar Orçamento',
@@ -150,6 +151,7 @@ export const translations = {
         'Empresa': [
           { label: 'Sobre nós', href: '#diferenciais' },
           { label: 'Cases de Sucesso', href: '#resultados' },
+          { label: 'Blog', href: '/blog/automacao-de-processos' },
           { label: 'Contato', href: '#contato' },
         ],
       } as Record<string, { label: string; href: string }[]>,
@@ -167,6 +169,7 @@ export const translations = {
         { label: 'Services', href: '#servicos' },
         { label: 'Differentials', href: '#diferenciais' },
         { label: 'Results', href: '#resultados' },
+        { label: 'Blog', href: '/blog/automacao-de-processos' },
         { label: 'Contact', href: '#contato' },
       ],
       cta: 'Request a Quote',
@@ -177,7 +180,7 @@ export const translations = {
       subtitle: 'AI, automation, and digital development solutions that eliminate inefficiencies, scale your business, and put your company decades ahead of the competition.',
       cta1: 'Request a Quote',
       cta2: 'Chat on WhatsApp',
-      trust: ['+15 Projects Delivered', '100% Dedication', '24/7 Support'],
+      trust: ['Selected Clients', '100% Dedication', '24/7 Support'],
       dashboard: {
         metrics: [
           { label: 'Automated Processes', value: '1,284', change: '+32%' },
