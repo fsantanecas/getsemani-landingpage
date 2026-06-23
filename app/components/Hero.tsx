@@ -101,8 +101,13 @@ export default function Hero() {
         </h1>
 
         {/* Subheadline */}
-        <p className="text-slate-400 text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+        <p className="text-slate-400 text-lg sm:text-xl max-w-2xl mx-auto mb-4 leading-relaxed">
           {t.hero.subtitle}
+        </p>
+        <p className="text-slate-500 text-sm max-w-2xl mx-auto mb-10">
+          Especialistas em <strong className="text-slate-400">automação de processos</strong>,{' '}
+          <strong className="text-slate-400">consultoria de TI</strong> e{' '}
+          <strong className="text-slate-400">desenvolvimento web</strong> para empresas no Brasil.
         </p>
 
         {/* CTAs */}

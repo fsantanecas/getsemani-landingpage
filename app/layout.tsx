@@ -69,24 +69,42 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Getsemani IT Solutions",
-              url: "https://getsemanitsolutions.com.br",
-              logo: "https://getsemanitsolutions.com.br/logo.png",
-              description:
-                "Soluções em IA, automação, desenvolvimento web e sistemas personalizados para empresas modernas.",
-              contactPoint: {
-                "@type": "ContactPoint",
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "@id": "https://getsemanitsolutions.com.br/#organization",
+                name: "Getsemani IT Solutions",
+                url: "https://getsemanitsolutions.com.br",
+                logo: "https://getsemanitsolutions.com.br/logo.png",
+                image: "https://getsemanitsolutions.com.br/og-image.png",
+                description: "Soluções em IA, automação de processos, desenvolvimento web e consultoria de TI para empresas modernas.",
                 telephone: "+55-11-96169-9686",
                 email: "suporte@getsemanitsolutions.com.br",
-                contactType: "customer service",
-                areaServed: "BR",
-                availableLanguage: "Portuguese",
+                areaServed: { "@type": "Country", name: "Brasil" },
+                priceRange: "$$",
+                sameAs: ["https://instagram.com/getsemanitsolution/"],
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: "+55-11-96169-9686",
+                  contactType: "customer service",
+                  areaServed: "BR",
+                  availableLanguage: "Portuguese",
+                },
               },
-              sameAs: ["https://instagram.com/getsemanitsolution/"],
-            }),
+              {
+                "@context": "https://schema.org",
+                "@type": "ItemList",
+                name: "Serviços Getsemani IT Solutions",
+                itemListElement: [
+                  { "@type": "Service", position: 1, name: "Automação de Processos", description: "Eliminamos tarefas manuais com fluxos automatizados que reduzem custos em até 70%.", provider: { "@type": "LocalBusiness", name: "Getsemani IT Solutions" } },
+                  { "@type": "Service", position: 2, name: "Consultoria de TI", description: "Diagnóstico tecnológico completo e roadmap estratégico para modernizar sua infraestrutura.", provider: { "@type": "LocalBusiness", name: "Getsemani IT Solutions" } },
+                  { "@type": "Service", position: 3, name: "Desenvolvimento Web", description: "Sites, sistemas e plataformas digitais de alto desempenho, otimizados para SEO e conversão.", provider: { "@type": "LocalBusiness", name: "Getsemani IT Solutions" } },
+                  { "@type": "Service", position: 4, name: "Chatbot com Inteligência Artificial", description: "Assistentes inteligentes que atendem, qualificam e convertem leads automaticamente.", provider: { "@type": "LocalBusiness", name: "Getsemani IT Solutions" } },
+                  { "@type": "Service", position: 5, name: "Inteligência Artificial para Empresas", description: "Modelos de IA aplicados: análise preditiva, NLP e visão computacional.", provider: { "@type": "LocalBusiness", name: "Getsemani IT Solutions" } },
+                ],
+              },
+            ]),
           }}
         />
       </head>
