@@ -25,7 +25,7 @@ const GitHubIcon = () => (
 const socials = [
   { icon: <InstagramIcon />, href: 'https://instagram.com/getsemanitsolution/', label: 'Instagram' },
   { icon: <LinkedInIcon />, href: 'https://www.linkedin.com/company/getsemani-it-solutions', label: 'LinkedIn' },
-  { icon: <GitHubIcon />, href: '#', label: 'GitHub' },
+  { icon: <GitHubIcon />, href: 'https://github.com/fsantanecas', label: 'GitHub' },
 ];
 
 export default function Footer() {
