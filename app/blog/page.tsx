@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Blog | Getsemani IT Solutions',
-  description: 'Artigos sobre automação de processos, desenvolvimento web, chatbots com IA, inteligência artificial e tecnologia para empresas.',
-  keywords: ['blog Getsemani', 'automação de processos', 'desenvolvimento web', 'chatbot com IA', 'inteligência artificial para empresas'],
+  description: 'Artigos sobre automação de processos, desenvolvimento web, chatbots com IA, inteligência artificial, CRM, integração de sistemas e tecnologia para empresas.',
+  keywords: ['blog Getsemani', 'automação de processos', 'desenvolvimento web', 'chatbot com IA', 'inteligência artificial para empresas', 'CRM personalizado', 'integração de sistemas via API'],
   alternates: { canonical: 'https://getsemanitsolutions.com.br/blog' },
   openGraph: {
     type: 'website',
@@ -18,6 +18,30 @@ export const metadata: Metadata = {
 };
 
 const posts = [
+  {
+    slug: 'integracao-de-sistemas-via-api',
+    categoria: 'Integrações',
+    data: '03 de agosto de 2026',
+    tempoLeitura: '9 min de leitura',
+    titulo: 'Integração de Sistemas via API: como conectar suas ferramentas sem retrabalho manual',
+    resumo: 'O que é integração de sistemas via API, os tipos mais usados (webhook, iPaaS, middleware) e como implementar sem parar sua operação.',
+  },
+  {
+    slug: 'crm-personalizado-vs-crm-pronto',
+    categoria: 'CRM com Dashboard Personalizado',
+    data: '31 de julho de 2026',
+    tempoLeitura: '8 min de leitura',
+    titulo: 'CRM Personalizado vs. CRM Pronto: Qual Escolher pra Sua Empresa',
+    resumo: 'CRM pronto ou personalizado? Compare custos, prazos e quando cada opção faz mais sentido pra escolher o sistema certo pro seu negócio.',
+  },
+  {
+    slug: 'inteligencia-artificial-para-empresas',
+    categoria: 'Inteligência Artificial',
+    data: '21 de julho de 2026',
+    tempoLeitura: '9 min de leitura',
+    titulo: 'Inteligência Artificial para Empresas: o Guia Prático para Aplicar e Gerar Resultado',
+    resumo: 'Entenda como aplicar inteligência artificial no seu negócio na prática, onde ela já gera resultado e como evitar os erros mais comuns.',
+  },
   {
     slug: 'chatbot-com-ia-para-atendimento',
     categoria: 'Chatbots com IA',
