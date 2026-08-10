@@ -21,7 +21,7 @@ const posts = [
   {
     slug: 'integracao-de-sistemas-via-api',
     categoria: 'Integrações',
-    data: '03 de agosto de 2026',
+    data: '10 de agosto de 2026',
     tempoLeitura: '9 min de leitura',
     titulo: 'Integração de Sistemas via API: como conectar suas ferramentas sem retrabalho manual',
     resumo: 'O que é integração de sistemas via API, os tipos mais usados (webhook, iPaaS, middleware) e como implementar sem parar sua operação.',

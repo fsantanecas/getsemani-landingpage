@@ -26,8 +26,8 @@ const schema = {
       description: 'Entenda o que é integração de sistemas via API, os tipos mais usados, como implementar passo a passo e quanto custa eliminar o retrabalho manual entre suas ferramentas.',
       author: { '@type': 'Organization', name: 'Getsemani IT Solutions', url: 'https://getsemanitsolutions.com.br' },
       publisher: { '@type': 'Organization', name: 'Getsemani IT Solutions', logo: { '@type': 'ImageObject', url: 'https://getsemanitsolutions.com.br/logo.png' } },
-      datePublished: '2026-08-03',
-      dateModified: '2026-08-03',
+      datePublished: '2026-08-10',
+      dateModified: '2026-08-10',
       mainEntityOfPage: 'https://getsemanitsolutions.com.br/blog/integracao-de-sistemas-via-api',
       image: 'https://getsemanitsolutions.com.br/og-image.png',
     },
@@ -67,7 +67,7 @@ export default function ArtigoIntegracaoSistemas() {
           {/* Meta */}
           <div style={{ display: 'flex', gap: 12, alignItems: 'center', marginBottom: 24 }}>
             <span style={{ fontSize: 12, color: '#0ea5e9', background: 'rgba(14,165,233,0.08)', border: '1px solid rgba(14,165,233,0.15)', padding: '4px 12px', borderRadius: 99 }}>Integrações</span>
-            <span style={{ fontSize: 12, color: '#475569' }}>03 de agosto de 2026 · 9 min de leitura</span>
+            <span style={{ fontSize: 12, color: '#475569' }}>10 de agosto de 2026 · 9 min de leitura</span>
           </div>
 
           {/* H1 */}
