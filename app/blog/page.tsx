@@ -19,6 +19,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'dashboards-analytics-para-empresas',
+    categoria: 'Analytics & Performance',
+    data: '17 de agosto de 2026',
+    tempoLeitura: '9 min de leitura',
+    titulo: 'Dashboards e Analytics para Pequenas e Médias Empresas: Como Decidir com Dado, Não Achismo',
+    resumo: 'Como dashboards e analytics ajudam PMEs a decidir com base em dado real. Tipos de painel, ferramentas, custos e passo a passo de implementação.',
+  },
+  {
     slug: 'integracao-de-sistemas-via-api',
     categoria: 'Integrações',
     data: '10 de agosto de 2026',
