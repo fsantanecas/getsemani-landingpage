@@ -19,6 +19,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'quando-contratar-consultoria-ti',
+    categoria: 'Consultoria em TI',
+    data: '24 de agosto de 2026',
+    tempoLeitura: '9 min de leitura',
+    titulo: 'Quando Contratar uma Consultoria de TI (e Quando Não Vale a Pena)',
+    resumo: 'Os sinais reais de que vale contratar uma consultoria de TI, quando não vale, quanto custa e como escolher a certa.',
+  },
+  {
     slug: 'dashboards-analytics-para-empresas',
     categoria: 'Analytics & Performance',
     data: '17 de agosto de 2026',
