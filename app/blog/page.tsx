@@ -19,6 +19,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'erros-comuns-automacao-de-processos',
+    categoria: 'Automação',
+    data: '31 de agosto de 2026',
+    tempoLeitura: '9 min de leitura',
+    titulo: '7 Erros Comuns na Automação de Processos (e Como Evitar Cada Um)',
+    resumo: 'Mais da metade dos projetos de automação no Brasil não chega à produção. Veja os erros que mais derrubam esses projetos e como evitar cada um.',
+  },
+  {
     slug: 'quando-contratar-consultoria-ti',
     categoria: 'Consultoria em TI',
     data: '24 de agosto de 2026',
