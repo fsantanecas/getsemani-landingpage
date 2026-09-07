@@ -19,6 +19,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'tendencias-ia-empresas-2026',
+    categoria: 'Inteligência Artificial',
+    data: '7 de setembro de 2026',
+    tempoLeitura: '9 min de leitura',
+    titulo: 'Tendências de Inteligência Artificial para Empresas em 2026: o Que Já é Realidade (e o Que Ainda é Promessa)',
+    resumo: 'IA agêntica, adoção em alta e o que ainda é hype: veja as tendências de IA que realmente importam pra empresas em 2026, com dados de mercado.',
+  },
+  {
     slug: 'erros-comuns-automacao-de-processos',
     categoria: 'Automação',
     data: '31 de agosto de 2026',
