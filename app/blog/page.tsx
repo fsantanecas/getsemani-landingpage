@@ -19,6 +19,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'checklist-integracao-de-sistemas',
+    categoria: 'Integrações',
+    data: '16 de setembro de 2026',
+    tempoLeitura: '8 min de leitura',
+    titulo: 'Checklist de Integração de Sistemas: o Que Verificar Antes de Conectar Suas Ferramentas via API',
+    resumo: 'Só 2% das empresas integraram com sucesso mais da metade de suas aplicações. Veja o checklist de segurança, teste e monitoramento pra não entrar nessa estatística.',
+  },
+  {
     slug: 'tendencias-ia-empresas-2026',
     categoria: 'Inteligência Artificial',
     data: '7 de setembro de 2026',
