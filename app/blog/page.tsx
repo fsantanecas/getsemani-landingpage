@@ -19,6 +19,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'chatbot-por-regras-vs-chatbot-com-ia',
+    categoria: 'Chatbots com IA',
+    data: '5 de outubro de 2026',
+    tempoLeitura: '9 min de leitura',
+    titulo: 'Chatbot por Regras vs. Chatbot com IA: Qual Escolher para o Atendimento da Sua Empresa',
+    resumo: 'Bot de menu ou IA generativa? Compare custo, controle e experiência do cliente, e veja quando o modelo híbrido é a melhor saída.',
+  },
+  {
     slug: 'checklist-integracao-de-sistemas',
     categoria: 'Integrações',
     data: '16 de setembro de 2026',
