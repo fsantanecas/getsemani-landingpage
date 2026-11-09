@@ -19,6 +19,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'site-lento-core-web-vitals',
+    categoria: 'Desenvolvimento Web',
+    data: '9 de novembro de 2026',
+    tempoLeitura: '8 min de leitura',
+    titulo: 'Site Lento Perde Cliente: Checklist de Core Web Vitals para Empresas',
+    resumo: 'Mais da metade das visitas em celular some quando a página passa de 3 segundos. Veja o checklist de Core Web Vitals pra corrigir imagens, scripts e hospedagem.',
+  },
+  {
     slug: 'chatbot-por-regras-vs-chatbot-com-ia',
     categoria: 'Chatbots com IA',
     data: '5 de outubro de 2026',
